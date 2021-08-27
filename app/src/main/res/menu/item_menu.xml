@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/chat"
-        android:icon="@drawable/chat"
+        android:icon="@drawable/chat_selector"
         android:title=""/>
     <item android:id="@+id/camera"
-        android:icon="@drawable/camera"
+        android:icon="@drawable/camera_selector"
         android:title="" />
     <item android:id="@+id/friends"
-        android:icon="@drawable/friends"
+        android:icon="@drawable/friends_selector"
         android:title="" />
 </menu>

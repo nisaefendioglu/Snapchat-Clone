@@ -15,6 +15,7 @@
         android:id="@+id/bottomNavigation"
         android:layout_alignParentBottom="true"
         app:menu="@menu/item_menu"
+        android:background="?android:attr/windowBackground"
         android:layout_width="match_parent"
         app:itemIconSize="30dp"
         android:layout_height="50dp">
