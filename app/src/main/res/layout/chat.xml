@@ -10,7 +10,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:scaleType="fitXY"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="13dp"
         android:layout_row="0"
         android:layout_column="0" />
@@ -24,14 +24,14 @@
         android:textColor="#fff"
         android:gravity="center"
         android:textSize="30dp"
-        android:layout_marginLeft="36dp" />
+        android:layout_marginLeft="26dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="85dp"
+        android:layout_marginLeft="75dp"
         android:textSize="20dp"
         android:textColor="@color/black"
         android:id="@+id/mailName"
@@ -42,7 +42,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginLeft="85dp"
+        android:layout_marginLeft="75dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="5dp"
         android:layout_columnWeight="1"

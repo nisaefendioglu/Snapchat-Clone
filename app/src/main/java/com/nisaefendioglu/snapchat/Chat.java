@@ -40,9 +40,9 @@ public class Chat extends Fragment {
         chatListArrayList.add(new ChatList("Murat","Tap to chat!",R.drawable.avatar2));
         chatListArrayList.add(new ChatList("Aslı","Tap to chat!",R.drawable.avatar));
 
-        ChatAdapter mailAdapter = new ChatAdapter(getActivity(), chatListArrayList);
+        ChatAdapter chatAdapter = new ChatAdapter(getActivity(), chatListArrayList);
         if (chatList != null) {
-            chatList.setAdapter(mailAdapter);
+            chatList.setAdapter(chatAdapter);
         }
 
         return view;
