@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_rowSpan="2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+    <TextView
+        android:id="@+id/mailNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginLeft="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="85dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/mailName"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="chat"/>
+        android:layout_height="40dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_columnWeight="1"
+        android:textSize="15dp"
+        android:textColor="#95a5a6"
+        android:id="@+id/mailContent"
+        android:layout_row="1"
+        android:layout_column="1" />
 </RelativeLayout>

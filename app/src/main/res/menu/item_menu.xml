@@ -8,5 +8,5 @@
         android:title="" />
     <item android:id="@+id/friends"
         android:icon="@drawable/friends_selector"
-        android:title="" />
+        android:title=""/>
 </menu>
