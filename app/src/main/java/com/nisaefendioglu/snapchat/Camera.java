@@ -23,7 +23,6 @@ public class Camera  extends Fragment {
         view = inflater.inflate(R.layout.camera, container, false);
 
         imageView = view.findViewById(R.id.imageView);
-
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         getActivity().startActivityForResult(intent, CAMERA_REQUEST);
         return view;
