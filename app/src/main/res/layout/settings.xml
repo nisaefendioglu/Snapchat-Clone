@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="ᐸ  Settings"
+        android:gravity="left"
+        app:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY ACCOUNT"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name                                                                                      ᐳ"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="User Name                                                                             ᐳ"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Date of Birth                                                                          ᐳ"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Phone Number                                                                      ᐳ"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="E-mail                                                                                      ᐳ"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Password                                                                               ᐳ"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Notifications                                                                          ᐳ"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Language                                                                               ᐳ"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Memories                                                                               ᐳ"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Lenses                                                                                    ᐳ"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Shazam                                                                                   ᐳ"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Payments                                                                               ᐳ"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Snap Codes                                                                            ᐳ"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Application View                                                                    ᐳ"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Privacy Policy                                                                         ᐳ"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Terms of Use                                                                          ᐳ"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Security Center                                                                       ᐳ"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

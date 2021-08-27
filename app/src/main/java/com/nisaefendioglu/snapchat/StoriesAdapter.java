@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -44,6 +45,7 @@ public class StoriesAdapter extends BaseAdapter {
         TextView mailName = convertView.findViewById(R.id.story_UserName);
         TextView mailContent = convertView.findViewById(R.id.story_time);
         ImageView imageView = convertView.findViewById(R.id.story_userImage);
+        ImageButton imageButton = convertView.findViewById(R.id.settings);
         StoriesList mail = storyArrayList.get(position);
         mailName.setText(mail.getName());
         mailContent.setText(mail.getClock());
