@@ -1,4 +1,4 @@
-package com.nisaefendioglu.snapchat;
+package com.nisaefendioglu.snapchat.Adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.nisaefendioglu.snapchat.DataList.ChatList;
+import com.nisaefendioglu.snapchat.R;
 
 import java.util.ArrayList;
 

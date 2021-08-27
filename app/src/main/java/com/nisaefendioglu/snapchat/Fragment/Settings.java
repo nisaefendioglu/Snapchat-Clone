@@ -1,4 +1,4 @@
-package com.nisaefendioglu.snapchat;
+package com.nisaefendioglu.snapchat.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
+import com.nisaefendioglu.snapchat.Fragment.Stories;
+import com.nisaefendioglu.snapchat.R;
 
 public class Settings extends Fragment {
 

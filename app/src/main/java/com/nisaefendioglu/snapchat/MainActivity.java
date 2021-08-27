@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.nisaefendioglu.snapchat.Fragment.Chat;
+import com.nisaefendioglu.snapchat.Fragment.Stories;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
@@ -36,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer,fragment).commit();
             return true;
         });
-
-
 
     }
 }

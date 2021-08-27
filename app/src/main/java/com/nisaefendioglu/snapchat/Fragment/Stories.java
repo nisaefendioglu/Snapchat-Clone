@@ -1,18 +1,18 @@
-package com.nisaefendioglu.snapchat;
+package com.nisaefendioglu.snapchat.Fragment;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
+import com.nisaefendioglu.snapchat.Adapter.StoriesAdapter;
+import com.nisaefendioglu.snapchat.R;
+import com.nisaefendioglu.snapchat.DataList.StoriesList;
 
 import java.util.ArrayList;
 

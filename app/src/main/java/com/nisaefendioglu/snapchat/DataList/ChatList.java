@@ -1,13 +1,13 @@
-package com.nisaefendioglu.snapchat;
+package com.nisaefendioglu.snapchat.DataList;
 
-public class StoriesList {
+public class  ChatList{
     private String name;
-    private String clock;
+    private String messageStatus;
     private int image;
 
-    public StoriesList(String name, String clock, int image) {
+    public ChatList(String name, String messageStatus, int image) {
         this.name = name;
-        this.clock = clock;
+        this.messageStatus = messageStatus;
         this.image = image;
 
     }
@@ -20,12 +20,12 @@ public class StoriesList {
         this.name = name;
     }
 
-    public String getClock() {
-        return clock;
+    public String getMessageStatus() {
+        return messageStatus;
     }
 
-    public void setClock(String clock) {
-        this.clock = clock;
+    public void setMessageStatus(String messageStatus) {
+        this.messageStatus = messageStatus;
     }
 
     public int getImage() {

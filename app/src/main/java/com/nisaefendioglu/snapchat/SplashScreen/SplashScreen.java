@@ -1,10 +1,13 @@
-package com.nisaefendioglu.snapchat;
+package com.nisaefendioglu.snapchat.SplashScreen;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
+
+import com.nisaefendioglu.snapchat.MainActivity;
+import com.nisaefendioglu.snapchat.R;
 
 
 public class SplashScreen extends Activity {
