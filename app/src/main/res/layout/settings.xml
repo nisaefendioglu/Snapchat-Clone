@@ -26,13 +26,13 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:layout_marginLeft="15dp"
         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="90dp"
         android:orientation="vertical">
 
     <TextView
@@ -218,6 +218,19 @@
             android:textSize="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="Snapchat / nisaefendioglu®"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:background="#f5f6fa"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
 
             />
 
