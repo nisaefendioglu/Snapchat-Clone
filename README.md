@@ -6,6 +6,7 @@ Clone of Snapchat app made using android studio and java.
 Screenshots of the app :
 <br><br><br>
 
+![Adsız6](https://user-images.githubusercontent.com/48391281/131218990-025a8da0-151c-4f96-b046-1d06bdfefc1d.png)
 
 
 ## License
