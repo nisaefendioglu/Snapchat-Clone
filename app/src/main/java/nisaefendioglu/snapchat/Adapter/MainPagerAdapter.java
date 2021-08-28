@@ -36,21 +36,6 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public CharSequence getPageTitle(int position) {
-        switch (position) {
-            case 0:
-                return "Chat";
-            case 1:
-                return "Camera";
-            case 2:
-                return "Story";
-            case 3:
-                return "Settings";
-        }
-        return super.getPageTitle(position);
-    }
-
-    @Override
     public int getCount() {
         return 4;
     }

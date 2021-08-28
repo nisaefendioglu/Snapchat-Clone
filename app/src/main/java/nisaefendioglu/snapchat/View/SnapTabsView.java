@@ -15,8 +15,10 @@ import android.widget.ImageView;
 import androidx.annotation.AttrRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import nisaefendioglu.snapchat.Fragment.Settings;
 import nisaefendioglu.snapchat.R;
 
 public class SnapTabsView extends FrameLayout implements ViewPager.OnPageChangeListener {
@@ -57,7 +59,6 @@ public class SnapTabsView extends FrameLayout implements ViewPager.OnPageChangeL
         mChatBtn =  findViewById(R.id.chat_btn);
         mStoryBtn =   findViewById(R.id.story_btn);
 
-
         final int centerPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 122,
                 getContext().getResources().getDisplayMetrics());
 
@@ -74,62 +75,10 @@ public class SnapTabsView extends FrameLayout implements ViewPager.OnPageChangeL
                 mIndicatorTranslationX = centerPadding;
 
                 mCapturePhotoBtn.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+
             }
 
         });
-
-    }
-
-    public ImageView getmCapturePhotoBtn() {
-        return mCapturePhotoBtn;
-    }
-
-    public ImageView getmChatBtn() {
-        return mChatBtn;
-    }
-
-    public ImageView getmStoryBtn() {
-        return mStoryBtn;
-    }
-
-
-    public void setViewPager(final ViewPager viewPager) {
-        if(viewPager != null) {
-            viewPager.addOnPageChangeListener(this);
-            mChatBtn.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(viewPager.getCurrentItem() != 0)
-                        viewPager.setCurrentItem(0);
-                }
-
-            });
-
-            mCapturePhotoBtn.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(viewPager.getCurrentItem() != 1)
-                        viewPager.setCurrentItem(1);
-                }
-            });
-
-            mStoryBtn.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(viewPager.getCurrentItem() != 2)
-                        viewPager.setCurrentItem(2);
-                }
-
-            });
-
-        }
-    }
-
-    private void setColor(float fractionFromCenter) {
-        int color = (int) mColorEval.evaluate(fractionFromCenter,mOffsetColor ,mCenterColor );
-        mChatBtn.setColorFilter(color);
-        mStoryBtn.setColorFilter(color);
-        mCapturePhotoBtn.setColorFilter(color);
 
     }
 
@@ -167,15 +116,8 @@ public class SnapTabsView extends FrameLayout implements ViewPager.OnPageChangeL
         mChatBtn.setTranslationY(mTranslationY-50);
         mStoryBtn.setTranslationY(mTranslationY-50);
 
-
-
         mIndicator.setTranslationX(indicatorTransX);
 
-
-        int color = (int) mColorEval.evaluate(fractionFromCenter, mCenterColor, mOffsetColor);
-        mChatBtn.setColorFilter(color);
-        mStoryBtn.setColorFilter(color);
-        mCapturePhotoBtn.setColorFilter(color);
     }
 
 

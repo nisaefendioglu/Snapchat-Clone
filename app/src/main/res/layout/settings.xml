@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:text="ᐸ  Settings"
+        android:text="   Settings"
         android:gravity="left|center"
         app:backgroundTint="@color/white"
         android:textColor="@color/black"
@@ -137,29 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="Lenses                                                                                    ᐳ"
-            android:textSize="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:text="Shazam                                                                                   ᐳ"
-            android:textSize="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="Payments                                                                               ᐳ"
             android:textSize="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="10dp"
@@ -230,7 +208,6 @@
             android:gravity="center"
             android:background="#f5f6fa"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
 
             />
 
