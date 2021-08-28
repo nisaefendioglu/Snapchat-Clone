@@ -7,18 +7,35 @@
     tools:context=".MainActivity">
 
     <FrameLayout
-    android:id="@+id/fragmentContainer"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"></FrameLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/item_menu"
-        android:background="?android:attr/windowBackground"
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
-        app:itemIconSize="30dp"
-        android:layout_height="50dp">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        android:layout_height="match_parent"></FrameLayout>
+    <View
+        android:id="@+id/ma_bg_view"
+        android:layout_width="match_parent"
+         android:layout_height="match_parent"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ma_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <nisaefendioglu.snapchat.views.SnapBarView
+        android:id="@+id/ma_chat_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true">
+
+    </nisaefendioglu.snapchat.views.SnapBarView>
+
+    <nisaefendioglu.snapchat.views.SnapTabsView
+        android:id="@+id/ma_snap_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" />
 
 </RelativeLayout>
