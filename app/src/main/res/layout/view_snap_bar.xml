@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="61dp"
     android:gravity="center_vertical"
-    tools:background="@color/light_purple"
     tools:layout_gravity="top">
 
     <RelativeLayout
@@ -27,8 +26,8 @@
                 android:layout_height="30dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:src="@drawable/ic_user"
                 tools:ignore="ContentDescription" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +43,6 @@
                     android:layout_marginRight="15dp"
                     android:focusable="true"
                     android:foregroundGravity="right"
-                    android:src="@drawable/ic_change"
                     tools:ignore="ContentDescription" />
 
                 <ImageView
@@ -55,7 +53,6 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:foregroundGravity="right"
-                    android:src="@drawable/ic_add_user"
                     tools:ignore="ContentDescription" />
 
             </LinearLayout>

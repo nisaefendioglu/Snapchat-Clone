@@ -14,7 +14,7 @@
         android:layout_height="80dp"
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="70dp"
-        android:src="@drawable/capture_photo_circle"/>
+        android:src="@drawable/camera"/>
 
     <ImageView
         android:id="@+id/chat_btn"
@@ -23,19 +23,9 @@
         android:layout_marginBottom="60dp"
         android:layout_marginStart="30dp"
         android:layout_gravity="bottom|start"
-        android:src="@drawable/ic_chat_bubble_24dp"
+        android:src="@drawable/chat"
         android:layout_marginLeft="30dp" />
 
-
-    <View
-        android:id="@+id/vst_indicator"
-        android:layout_width="30dp"
-        android:layout_height="4dp"
-        android:background="@drawable/rounded_line"
-        android:layout_gravity="bottom|center"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="5dp"/>
 
     <ImageView
         android:id="@+id/story_btn"
@@ -44,6 +34,6 @@
         android:layout_marginBottom="60dp"
         android:layout_marginEnd="30dp"
         android:layout_gravity="bottom|end"
-        android:src="@drawable/ic_story_24dp"
+        android:src="@drawable/stories"
         android:layout_marginRight="30dp" />
 </FrameLayout>

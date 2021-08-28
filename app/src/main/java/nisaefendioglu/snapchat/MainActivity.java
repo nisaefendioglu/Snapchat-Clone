@@ -4,16 +4,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Size;
-import android.view.View;
 import android.widget.ImageView;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
-import nisaefendioglu.snapchat.adapters.MainPagerAdapter;
-import nisaefendioglu.snapchat.fragments.Camera;
+import nisaefendioglu.snapchat.Adapter.MainPagerAdapter;
+import nisaefendioglu.snapchat.Fragment.Camera;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Takesize();
 
-        final View bg = findViewById(R.id.ma_bg_view);
         final ViewPager viewPager = findViewById(R.id.ma_view_pager);
 
 
@@ -41,60 +38,14 @@ public class MainActivity extends AppCompatActivity {
 ;
         CaptureBtn = findViewById(R.id.capture_photo_btn);
 
-        final int light_blue = ContextCompat.getColor(this, R.color.light_blue);
-        final int light_purple = ContextCompat.getColor(this, R.color.light_purple);
-
-
-        CaptureBtn.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-            @Override
-            public void onClick(View v) {
-                if (viewPager.getCurrentItem() != 1) {
-                    viewPager.setCurrentItem(1, true);
-                } else {
-                    Camera fragment = (Camera) getSupportFragmentManager().findFragmentByTag("android:switcher:" + R.id.ma_view_pager + ":" + viewPager.getCurrentItem());
-                    fragment.TakePhoto();
-                }
+        CaptureBtn.setOnClickListener(v -> {
+            if (viewPager.getCurrentItem() != 1) {
+                viewPager.setCurrentItem(1, true);
+            } else {
+                Camera fragment = (Camera) getSupportFragmentManager().findFragmentByTag("android:switcher:" + R.id.ma_view_pager + ":" + viewPager.getCurrentItem());
+                fragment.TakePhoto();
             }
         });
-
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-            @Override
-            public void onPageScrolled(int i, float v, int i1) {
-                 if (i == 0) {
-                    try {
-                        Camera fragment = (Camera) getSupportFragmentManager().findFragmentByTag("android:switcher:" + R.id.ma_view_pager + ":" + viewPager.getCurrentItem());
-                        fragment.textureView.setAlpha((float) Math.pow(v, 4));
-                    } catch (Exception e) {
-
-                    }
-                    bg.setBackgroundColor(light_blue);
-                    bg.setAlpha(1 - v);
-                } else if (i == 1) {
-                    try {
-                        Camera fragment = (Camera) getSupportFragmentManager().findFragmentByTag("android:switcher:" + R.id.ma_view_pager + ":" + viewPager.getCurrentItem());
-                        fragment.textureView.setAlpha(1 - (float) Math.pow(v, 0.25));
-                    } catch (Exception e) {
-
-                    }
-                    bg.setAlpha(v);
-                    bg.setBackgroundColor(light_purple);
-
-                }
-            }
-
-            @Override
-            public void onPageSelected(int i) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int i) {
-
-            }
-        });
-
 
     }
 

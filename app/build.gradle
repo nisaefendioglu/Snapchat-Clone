@@ -31,6 +31,8 @@ dependencies {
     implementation 'info.androidhive:imagefilters:1.0.7'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 
 
 }
