@@ -48,7 +48,7 @@ public class StoriesAdapter extends BaseAdapter {
         TextView mailName = convertView.findViewById(R.id.story_UserName);
         TextView mailContent = convertView.findViewById(R.id.story_time);
         ImageView imageView = convertView.findViewById(R.id.story_userImage);
-        ImageButton imageButton = convertView.findViewById(R.id.settings);
+        ImageView imageButton = convertView.findViewById(R.id.settings);
         StoriesList mail = storyArrayList.get(position);
         mailName.setText(mail.getName());
         mailContent.setText(mail.getClock());

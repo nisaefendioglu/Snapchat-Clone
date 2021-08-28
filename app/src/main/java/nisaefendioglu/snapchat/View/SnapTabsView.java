@@ -25,7 +25,7 @@ public class SnapTabsView extends FrameLayout implements ViewPager.OnPageChangeL
 
     private ImageView mCapturePhotoBtn;
     private ImageView mChatBtn;
-    private ImageView mStoryBtn;
+    private ImageView mStoryBtn,settings;
     private View mIndicator;
 
     private float mCenterTranslationY;
@@ -58,6 +58,7 @@ public class SnapTabsView extends FrameLayout implements ViewPager.OnPageChangeL
         mCapturePhotoBtn =   findViewById(R.id.capture_photo_btn);
         mChatBtn =  findViewById(R.id.chat_btn);
         mStoryBtn =   findViewById(R.id.story_btn);
+        settings = findViewById(R.id.settings);
 
         final int centerPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 122,
                 getContext().getResources().getDisplayMetrics());

@@ -3,6 +3,7 @@ package nisaefendioglu.snapchat;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Size;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.annotation.RequiresApi;
@@ -16,7 +17,7 @@ import nisaefendioglu.snapchat.Fragment.Stories;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView CaptureBtn,chat_btn,story_btn;
+    ImageView CaptureBtn,chat_btn,story_btn,settings;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         CaptureBtn = findViewById(R.id.capture_photo_btn);
         chat_btn = findViewById(R.id.chat_btn);
         story_btn = findViewById(R.id.story_btn);
+        settings = findViewById(R.id.settings);
 
         CaptureBtn.setOnClickListener(v -> {
             if (viewPager.getCurrentItem() != 1) {
@@ -52,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
         story_btn.setOnClickListener(v -> {
             if (viewPager.getCurrentItem() != 2) {
                 viewPager.setCurrentItem(2, true);
+            }
+        });
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (viewPager.getCurrentItem() != 3) {
+                    viewPager.setCurrentItem(3, true);
+                }
             }
         });
 

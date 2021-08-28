@@ -21,7 +21,7 @@ public class Stories  extends Fragment {
     View view;
     ListView storyListView;
     final ArrayList<StoriesList> storiesLists = new ArrayList<>();
-    ImageView settings,storyAdd;
+    ImageView storyAdd;
     Fragment fragment = null;
 
     public static Fragment create() {
@@ -33,7 +33,6 @@ public class Stories  extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.stories, container, false);
-        settings = view.findViewById(R.id.settings);
         storyAdd = view.findViewById(R.id.storyAdd);
 
         storyListView = view.findViewById(R.id.storyListView);
@@ -47,9 +46,6 @@ public class Stories  extends Fragment {
         }
 
 
-        settings.setOnClickListener(view -> {
-            fragment = new Settings();
-        });
 
         storyAdd.setOnClickListener(view -> fragment = new Camera());
         return view;
