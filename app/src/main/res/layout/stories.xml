@@ -71,6 +71,8 @@
             android:id="@+id/storyListView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="130dp"/>
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="380dp"
+            />
 
 </FrameLayout>

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:text="ᐸ  Settings"
-        android:gravity="left"
+        android:gravity="left|center"
         app:backgroundTint="@color/white"
         android:textColor="@color/black"
         android:textAllCaps="false"

@@ -3,7 +3,6 @@ package nisaefendioglu.snapchat.Fragment;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -41,7 +40,6 @@ import androidx.fragment.app.Fragment;
 import java.util.Collections;
 
 import nisaefendioglu.snapchat.R;
-import nisaefendioglu.snapchat.Utils.CameraFocusOnTouchHandler;
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class Camera extends Fragment  {
@@ -296,7 +294,6 @@ public class Camera extends Fragment  {
                                 Camera.this.cameraCaptureSession = cameraCaptureSession;
                                 Camera.this.cameraCaptureSession
                                         .setRepeatingRequest(captureRequest, null, backgroundHandler);
-                                textureView.setOnTouchListener(new CameraFocusOnTouchHandler(mCameraCharacteristics, captureRequestBuilder, cameraCaptureSession, backgroundHandler));
 
                             } catch (CameraAccessException e) {
                                 e.printStackTrace();
