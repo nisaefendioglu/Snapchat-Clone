@@ -1,5 +1,6 @@
 package nisaefendioglu.snapchat.Fragment;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import java.util.ArrayList;
 
@@ -20,18 +21,20 @@ public class Stories  extends Fragment {
     View view;
     ListView storyListView;
     final ArrayList<StoriesList> storiesLists = new ArrayList<>();
-    ImageView settings;
+    ImageView settings,storyAdd;
     Fragment fragment = null;
 
     public static Fragment create() {
         return new Stories();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.stories, container, false);
         settings = view.findViewById(R.id.settings);
+        storyAdd = view.findViewById(R.id.storyAdd);
 
         storyListView = view.findViewById(R.id.storyListView);
         storiesLists.add(new StoriesList("Nisa","08:45",R.drawable.avatarstory));
@@ -44,15 +47,11 @@ public class Stories  extends Fragment {
         }
 
 
-        settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fragment = new Settings();
-                FragmentManager fm = getFragmentManager();
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainer,fragment).commit();
-            }
+        settings.setOnClickListener(view -> {
+            fragment = new Settings();
         });
 
+        storyAdd.setOnClickListener(view -> fragment = new Camera());
         return view;
 
 

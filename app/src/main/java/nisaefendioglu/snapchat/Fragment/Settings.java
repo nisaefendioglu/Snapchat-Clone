@@ -18,6 +18,10 @@ public class Settings extends Fragment {
     Button back;
     Fragment fragment = null;
 
+    public static Fragment create() {
+        return new Settings();
+    }
+
     @Override
     public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -26,8 +30,6 @@ public class Settings extends Fragment {
 
         back.setOnClickListener(view -> {
             fragment = new Stories();
-            FragmentManager fm = getFragmentManager();
-            getFragmentManager().beginTransaction().replace(R.id.fragmentContainer,fragment).commit();
         });
 
 

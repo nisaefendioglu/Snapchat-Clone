@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import nisaefendioglu.snapchat.Fragment.Camera;
 import nisaefendioglu.snapchat.Fragment.Chat;
+import nisaefendioglu.snapchat.Fragment.Settings;
 import nisaefendioglu.snapchat.Fragment.Stories;
 
 public class MainPagerAdapter extends FragmentPagerAdapter {
@@ -27,6 +28,8 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
                 return Camera.create();
             case 2:
                 return Stories.create();
+            case 3:
+                return Settings.create();
 
         }
         return null;
@@ -38,9 +41,11 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return "Chat";
             case 1:
-                return "Kamera";
+                return "Camera";
             case 2:
-                return "Hikaye";
+                return "Story";
+            case 3:
+                return "Settings";
         }
         return super.getPageTitle(position);
     }

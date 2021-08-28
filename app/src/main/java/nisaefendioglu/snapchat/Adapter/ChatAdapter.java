@@ -47,10 +47,10 @@ public class ChatAdapter extends BaseAdapter {
         TextView mailName =  convertView.findViewById(R.id.mailName);
         TextView mailContent = convertView.findViewById(R.id.mailContent);
         ImageView imageView = convertView.findViewById(R.id.imageView);
-        ChatList mail = mailArrayList.get(position);
-        mailName.setText(mail.getName());
-        mailContent.setText(mail.getMessageStatus());
-        imageView.setImageResource(mail.getImage());
+        ChatList chat = mailArrayList.get(position);
+        mailName.setText(chat.getName());
+        mailContent.setText(chat.getMessageStatus());
+        imageView.setImageResource(chat.getImage());
         return convertView;
     }
 }

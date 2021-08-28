@@ -121,6 +121,7 @@ public class SnapTabsView extends FrameLayout implements ViewPager.OnPageChangeL
                 }
 
             });
+
         }
     }
 

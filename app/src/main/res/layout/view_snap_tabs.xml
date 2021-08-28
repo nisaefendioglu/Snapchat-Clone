@@ -13,14 +13,14 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_gravity="center|bottom"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="30dp"
         android:src="@drawable/camera"/>
 
     <ImageView
         android:id="@+id/chat_btn"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginStart="30dp"
         android:layout_gravity="bottom|start"
         android:src="@drawable/chat"
@@ -31,7 +31,7 @@
         android:id="@+id/story_btn"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginEnd="30dp"
         android:layout_gravity="bottom|end"
         android:src="@drawable/stories"
